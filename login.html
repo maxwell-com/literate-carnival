@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+#logoff {
+  display: none;
+  
+}
+
+#logon {
+ 
+  
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+<div id="logoff"> <button onclick="off()">log off</button> </div>
+
+
+ <div id="logon"><form class="w3-container">
+
+  <p><input class="w3-input w3-border w3-hover-red" type="text">Username</p>
+  <p><input class="w3-input w3-border w3-hover-blue" type="text">Password</p>
+</form>  <center><button onclick="on()">log on</button></center>
+   </div>
+
+   
+
+
+<script>
+function on() {
+  document.getElementById("logoff").style.display = "block";
+  document.getElementById("logon").style.display = "none";
+}
+
+function off() {
+  document.getElementById("logoff").style.display = "none";
+  document.getElementById("logon").style.display = "block";
+}
+
+
+
+</script>
+
+</body>
+</html>
+
+
